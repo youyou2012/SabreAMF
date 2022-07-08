@@ -111,7 +111,7 @@
 		 * @param array $needDeserialized The deserialized result whether you want to return
          * @return mixed 
          */
-        public function sendRequest($servicePath,$data,$needDeserialized=true, $timeout = 20) {
+        public function sendRequest($servicePath,$data,$needDeserialized=true, $timeout = 60) {
            
             // We're using the FLEX Messaging framework
             if($this->encoding & SabreAMF_Const::FLEXMSG) {
